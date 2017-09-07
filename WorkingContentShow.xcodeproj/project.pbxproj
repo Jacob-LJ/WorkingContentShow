@@ -50,6 +50,11 @@
 		16C929A41F60EEC2004F51A9 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C929981F60EEC2004F51A9 /* NSObject+MJProperty.m */; };
 		16C929A51F60EEC2004F51A9 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C9299A1F60EEC2004F51A9 /* NSString+MJExtension.m */; };
 		16C929A71F60EFFD004F51A9 /* GifImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16C929A61F60EFFD004F51A9 /* GifImages.plist */; };
+		16C929B31F61319D004F51A9 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C929AA1F61319D004F51A9 /* SVIndefiniteAnimatedView.m */; };
+		16C929B41F61319D004F51A9 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C929AC1F61319D004F51A9 /* SVProgressAnimatedView.m */; };
+		16C929B51F61319D004F51A9 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16C929AE1F61319D004F51A9 /* SVProgressHUD.bundle */; };
+		16C929B61F61319D004F51A9 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C929B01F61319D004F51A9 /* SVProgressHUD.m */; };
+		16C929B71F61319D004F51A9 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C929B21F61319D004F51A9 /* SVRadialGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +120,16 @@
 		16C929991F60EEC2004F51A9 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		16C9299A1F60EEC2004F51A9 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		16C929A61F60EFFD004F51A9 /* GifImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GifImages.plist; sourceTree = "<group>"; };
+		16C929A91F61319D004F51A9 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		16C929AA1F61319D004F51A9 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		16C929AB1F61319D004F51A9 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		16C929AC1F61319D004F51A9 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		16C929AD1F61319D004F51A9 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		16C929AE1F61319D004F51A9 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		16C929AF1F61319D004F51A9 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		16C929B01F61319D004F51A9 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		16C929B11F61319D004F51A9 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		16C929B21F61319D004F51A9 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +258,7 @@
 		16C929831F60EEB4004F51A9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				16C929A81F61319D004F51A9 /* SVProgressHUD */,
 				16C929841F60EEC2004F51A9 /* MJExtension */,
 			);
 			path = Lib;
@@ -276,6 +292,23 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
+		16C929A81F61319D004F51A9 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				16C929A91F61319D004F51A9 /* SVIndefiniteAnimatedView.h */,
+				16C929AA1F61319D004F51A9 /* SVIndefiniteAnimatedView.m */,
+				16C929AB1F61319D004F51A9 /* SVProgressAnimatedView.h */,
+				16C929AC1F61319D004F51A9 /* SVProgressAnimatedView.m */,
+				16C929AD1F61319D004F51A9 /* SVProgressHUD-Prefix.pch */,
+				16C929AE1F61319D004F51A9 /* SVProgressHUD.bundle */,
+				16C929AF1F61319D004F51A9 /* SVProgressHUD.h */,
+				16C929B01F61319D004F51A9 /* SVProgressHUD.m */,
+				16C929B11F61319D004F51A9 /* SVRadialGradientLayer.h */,
+				16C929B21F61319D004F51A9 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +340,7 @@
 				TargetAttributes = {
 					16C929291F60D386004F51A9 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3AM9U4HK7K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -344,6 +378,7 @@
 				16C929641F60DFBA004F51A9 /* 16_TimeLine_DeleteReply.gif in Resources */,
 				16C929711F60DFBA004F51A9 /* 9_PhotoBrowserPart.gif in Resources */,
 				16C9295F1F60DFBA004F51A9 /* 12_TravelPart.gif in Resources */,
+				16C929B51F61319D004F51A9 /* SVProgressHUD.bundle in Resources */,
 				16C929631F60DFBA004F51A9 /* 16_TimeLine.gif in Resources */,
 				16C9293A1F60D386004F51A9 /* Assets.xcassets in Resources */,
 				16C929661F60DFBA004F51A9 /* 17_TaskPart.gif in Resources */,
@@ -377,14 +412,18 @@
 				16C929351F60D386004F51A9 /* ViewController.m in Sources */,
 				16C929461F60D7A3004F51A9 /* JAActionDescCell.m in Sources */,
 				16C9299E1F60EEC2004F51A9 /* MJProperty.m in Sources */,
+				16C929B71F61319D004F51A9 /* SVRadialGradientLayer.m in Sources */,
 				16C9299D1F60EEC2004F51A9 /* MJFoundation.m in Sources */,
 				16C929751F60E083004F51A9 /* DisplayContentController.m in Sources */,
 				16C929791F60E1B7004F51A9 /* ImageModel.m in Sources */,
+				16C929B41F61319D004F51A9 /* SVProgressAnimatedView.m in Sources */,
 				16C929321F60D386004F51A9 /* AppDelegate.m in Sources */,
+				16C929B31F61319D004F51A9 /* SVIndefiniteAnimatedView.m in Sources */,
 				16C929A01F60EEC2004F51A9 /* MJPropertyType.m in Sources */,
 				16C9297E1F60E8BD004F51A9 /* UIImage+GIF.m in Sources */,
 				16C929A31F60EEC2004F51A9 /* NSObject+MJKeyValue.m in Sources */,
 				16C929A51F60EEC2004F51A9 /* NSString+MJExtension.m in Sources */,
+				16C929B61F61319D004F51A9 /* SVProgressHUD.m in Sources */,
 				16C9292F1F60D386004F51A9 /* main.m in Sources */,
 				16C929A41F60EEC2004F51A9 /* NSObject+MJProperty.m in Sources */,
 			);
@@ -506,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AM9U4HK7K;
 				INFOPLIST_FILE = WorkingContentShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacobSoftware.WorkingContentShow;
@@ -517,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AM9U4HK7K;
 				INFOPLIST_FILE = WorkingContentShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacobSoftware.WorkingContentShow;
