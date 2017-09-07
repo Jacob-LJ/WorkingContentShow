@@ -30,8 +30,13 @@ static const CGFloat kDefaultCellHeight = 50;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setUpNav];
     [self setUpInit];
     
+}
+
+- (void)setUpNav {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"说明" style:UIBarButtonItemStylePlain target:self action:@selector(desc)];
 }
 
 - (void)setUpInit {
@@ -69,5 +74,12 @@ static const CGFloat kDefaultCellHeight = 50;
 
 }
 
+#pragma mark - 说明
+- (void)desc {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"这是本人部分近期工作内容的一个简单截图展示应用，方便自己整理知识点" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancleAct = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:NULL];
+    [alert addAction:cancleAct];
+    [self presentViewController:alert animated:YES completion:NULL];
+}
 
 @end
